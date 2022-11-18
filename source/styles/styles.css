@@ -1,3 +1,17 @@
+@font-face{
+    font-family: studiofeixen-variable;
+    src: url(/source/fonts/studio-feixen-sans-variable.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: studiofeixen;
+    src: url(/source/fonts/StudioFeixenSans-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --background-color: #2b2b33;
 
@@ -33,8 +47,35 @@ body {
 }
 
 .main > .underlayer {
-    font-family: 'Manrope', sans-serif;
-    font-size: 36px;
+    color: transparent;
 
-    color: var(--white-color);
+    font-family: studiofeixen, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    letter-spacing: 0.5rem;
+
+    -webkit-text-stroke: 1.25px var(--white-color);
+}
+
+.main > .underlayer::selection {
+    color: #f3f2f9;
+    background-color: #606887;
+    
+    -webkit-text-stroke: 1.25px transparent;
+}
+
+.main > .top {
+    color: var(--light-blue-color);
+
+    font-family: studiofeixen, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    letter-spacing: normal;
+}
+
+.main > .top::selection {
+    color: #f3f2f9;
+    background-color: #606887;
 }
