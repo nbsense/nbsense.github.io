@@ -1,8 +1,40 @@
-html {
-    background-color: #2b2b33;
+:root {
+    --background-color: #2b2b33;
+
+    --white-color: #aab2d1;
+    --light-blue-color: #b4c3ff;
 }
 
-/*
-- background color: 2b2b33
-- text color: aab2d1
-*/
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+
+    background-color: var(--background-color);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > .underlayer {
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+
+    color: var(--white-color);
+}
